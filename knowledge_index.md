@@ -33,8 +33,11 @@
 - 2026-06-06 added `appcast.xml` here to host the Anchor macOS app's Sparkle auto-update feed at `https://haichaolihc.github.io/anchor-website/appcast.xml` (referenced by the app's `SUFeedURL`). It currently has zero `<item>` entries (valid "no update" state) plus a commented item template. New releases are appended (newest first) using `make_appcast_item.sh` in the app repo, which signs the GitHub-Release DMG with the EdDSA key.
     - importance: yellow
     - review_state: approved
-- `privacy.html` is the App Store Connect privacy policy URL. It states that Anchor does not collect personal data on developer-operated servers, while disclosing local app data and optional third-party AI service use.
+- `privacy.html` is the App Store Connect privacy policy URL. It discloses on-device screenshot processing plus Aptabase usage analytics and Sentry diagnostics; it must remain aligned with the app's actual collection, sharing, and retention behavior.
     - importance: yellow
+    - review_state: informed
+- 2026-07-27 updated the public privacy policy and homepage to match the on-device-only App Store build: Anchor has no camera or API-key/cloud-AI feature; periodic still screenshots are processed locally during active focus sessions, are never uploaded/shared/used for training, and temporary files are deleted after each check/intervention. The policy separately and specifically discloses Aptabase product-usage event fields and Sentry diagnostics.
+    - importance: red
     - review_state: informed
 
 ## Child Indexes
