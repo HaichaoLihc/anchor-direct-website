@@ -3,201 +3,160 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Anchor — Delete your blockers. For good.</title>
-  <meta name="description" content="Anchor is an on-device AI focus proctor for macOS. Instead of a blunt blocklist, it understands what's on your screen, catches you the moment you drift, and pulls you back — with a focus score, voice nudges, and pets you can earn or lose.">
+  <title>Anchor: AI Focus — The best focus app on your Mac</title>
+  <meta name="description" content="Anchor: AI Focus is an on-device AI focus proctor for macOS. It watches your screen during a focus session and steps in the moment you drift — with an overlay, a spoken reminder, a focus score, and pets you can earn or lose. Free on the Mac App Store.">
+  <meta property="og:title" content="Anchor: AI Focus — The best focus app on your Mac">
+  <meta property="og:description" content="An on-device AI proctor that watches your screen while you work — and steps in the moment you drift.">
+  <meta property="og:image" content="https://haichaolihc.github.io/anchor-website/assets/anchor-promo-poster.jpg">
   <link rel="icon" href="app-icon.png" type="image/png">
   <link rel="apple-touch-icon" href="app-icon.png">
-  <link rel="stylesheet" href="styles.css?v=20260606-blocker">
+  <link rel="stylesheet" href="styles.css?v=20261020c">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html" aria-label="Anchor home">
-      <img src="app-icon.png" alt="" width="32" height="32">
-      <span>Anchor</span>
-    </a>
-    <nav class="nav-links" aria-label="Site links">
-      <a href="#how">How it works</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="support.html">Support</a>
-    </nav>
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Anchor home">
+        <img src="app-icon.png" alt="" width="28" height="28">
+        <span>Anchor</span>
+      </a>
+      <nav class="nav" aria-label="Site">
+        <a class="nav-link" href="#how">How it works</a>
+        <a class="nav-link" href="privacy.html">Privacy</a>
+        <a class="button button-sm" href="https://apps.apple.com/us/app/anchor-ai-focus/id6774340728?mt=12">Get it free</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="site">
+  <main>
     <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="eyebrow">AI focus proctor · macOS</p>
-        <h1 id="hero-title">Anchor</h1>
-        <p class="headline">Delete your blockers. For good.</p>
-        <p class="lede">App and website blockers fight your willpower with brute force — and lose. Anchor is an on-device AI that watches your screen, tells deep work apart from a rabbit hole, and pulls you back the second you drift.</p>
-        <div class="cta-row">
-          <a class="button" href="https://github.com/HaichaoLihc/anchor-website/releases/latest">Download for Mac</a>
-          <a href="#how">See how it works</a>
-        </div>
-        <p class="cta-note">Free · Requires macOS 14.1 on Apple silicon</p>
+      <p class="eyebrow">Anchor: AI Focus · macOS</p>
+      <h1 id="hero-title">Focus with <em>intent</em>.</h1>
+      <p class="lede">An on-device AI proctor that watches your screen while you work — and steps in the moment you drift.</p>
+      <div class="cta">
+        <a class="button" href="https://apps.apple.com/us/app/anchor-ai-focus/id6774340728?mt=12">Get it free on the Mac App Store</a>
+        <a class="link" href="https://github.com/HaichaoLihc/anchor-website/releases/latest">or download directly</a>
       </div>
-      <figure class="hero-media">
-        <video src="assets/session-set-up-view.mov" poster="assets/newdesign/setup.png" muted playsinline autoplay loop preload="metadata"></video>
-        <figcaption>Pick a proctor, set a goal and a timer, and start a focused block.</figcaption>
+      <p class="note">macOS 14.1+ on Apple silicon · On the App Store, search “Anchor: AI Focus”</p>
+
+      <figure class="video">
+        <video id="promo-video" src="assets/anchor-promo.mp4" poster="assets/anchor-promo-poster.jpg" muted playsinline autoplay loop preload="auto" width="1920" height="1080" aria-label="Anchor promo: start a session, Anchor watches your screen, and steps in when you drift.">
+          <track kind="captions" src="assets/anchor-promo.vtt" srclang="en" label="English">
+        </video>
+        <div class="video-controls">
+          <button class="video-btn" type="button" data-play aria-label="Pause video">
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" data-icon-pause><rect x="6" y="5" width="4" height="14" rx="1" fill="currentColor"/><rect x="14" y="5" width="4" height="14" rx="1" fill="currentColor"/></svg>
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" data-icon-play hidden><path d="M7 5v14l12-7z" fill="currentColor"/></svg>
+          </button>
+          <button class="video-btn" type="button" data-sound aria-pressed="false">
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <span>Play with sound</span>
+          </button>
+        </div>
       </figure>
     </section>
 
-    <section class="problem" aria-labelledby="problem-title">
-      <div class="section-head center">
-        <p class="eyebrow">The problem</p>
-        <h2 id="problem-title">Nobody's brain was built for the feed.</h2>
-        <p>Short-form video, bottomless feeds, and a notification for everything — the modern internet is engineered by some of the smartest people alive to take your attention and never give it back. For a generation that grew up inside it, sitting with one task for an hour can feel almost impossible.</p>
-      </div>
-      <div class="problem-grid">
-        <article class="problem-card">
-          <h3>Three-second dopamine</h3>
-          <p>Endless short videos train your brain to expect a fresh hit every few seconds. Real work doesn't pay out that fast.</p>
-        </article>
-        <article class="problem-card">
-          <h3>Infinite everything</h3>
-          <p>Feeds never end and never repeat, so there's never a natural moment to stop — the off-ramp simply isn't there.</p>
-        </article>
-        <article class="problem-card">
-          <h3>One tab away</h3>
-          <p>Every distraction lives on the same machine you're trying to work on. Willpower alone is a losing fight.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="contrast" aria-labelledby="contrast-title">
+    <section class="section" id="how" aria-labelledby="how-title">
       <div class="section-head">
-        <p class="eyebrow">Why blockers don't work</p>
-        <h2 id="contrast-title">A blocklist is a blunt instrument.</h2>
-        <p>Traditional app and website blockers are absolute and blind. They can't tell research from procrastination, you whitelist your way around them in seconds, and the instant you switch one off, you're gone. Anchor takes the opposite approach.</p>
+        <p class="eyebrow">How it works</p>
+        <h2 id="how-title">It steps in the moment you drift.</h2>
       </div>
-      <div class="contrast-grid">
-        <div class="contrast-col">
-          <h3>App &amp; website blockers</h3>
-          <ul>
-            <li>All-or-nothing — block YouTube and you also block the lecture you need.</li>
-            <li>Trivial to disable the moment the urge hits.</li>
-            <li>No idea what you're actually doing — just a list of banned names.</li>
-            <li>Punish the tool, never build the habit.</li>
-          </ul>
-        </div>
-        <div class="contrast-col is-anchor">
-          <h3>Anchor</h3>
-          <ul>
-            <li>Reads the actual activity on screen, not just the app or domain.</li>
-            <li>Stays out of the way until you genuinely drift — then reacts fast.</li>
-            <li>Nudges with a notification or a spoken reminder pointing back to the task.</li>
-            <li>Scores every session, so focus becomes a habit you can see improve.</li>
-          </ul>
-        </div>
-      </div>
+      <ol class="steps">
+        <li class="step">
+          <img src="assets/web/start.webp" alt="Anchor setup screen: pick a proctor, set a timer, and press Begin." width="1400" height="1091" loading="lazy">
+          <h3>Start a session</h3>
+          <p>Pick a proctor and a timer, then press Begin.</p>
+        </li>
+        <li class="step">
+          <img src="assets/web/watch.webp" alt="A notes document with Anchor's notch island showing Session started." width="1400" height="788" loading="lazy">
+          <h3>It watches your screen</h3>
+          <p>An on-device model checks what you're doing against your goal.</p>
+        </li>
+        <li class="step">
+          <img src="assets/web/step-in.webp" alt="Anchor's overlay covering a video feed: Step out of the scroll, back to work." width="1400" height="788" loading="lazy">
+          <h3>It pulls you back</h3>
+          <p>Drift into a feed and an overlay plus a spoken reminder bring you back.</p>
+        </li>
+      </ol>
     </section>
 
-    <section class="how-head section-head center" aria-labelledby="how-title">
-      <p class="eyebrow">How it works</p>
-      <h2 id="how-title">Watched like a proctor, not walled off.</h2>
-    </section>
-
-    <section class="flow" id="how" aria-label="How Anchor works">
-      <article class="flow-step">
-        <div class="flow-copy">
-          <span>01</span>
-          <h2>Set the intent.</h2>
-          <p>Choose a proctor, each have a different style. Some checks general productivity and some watch you for a specific focus goal.</p>
-        </div>
-        <figure class="flow-media">
-          <img src="assets/newdesign/setup.png" alt="Anchor setup screen with proctor selection and a Begin button.">
-        </figure>
-      </article>
-
-      <article class="flow-step reverse">
-        <div class="flow-copy">
-          <span>02</span>
-          <h2>Work, quietly watched.</h2>
-          <p>The session stays minimal — timer, live score, proctor state. Behind it, the on-device model reads your screen and judges it against your goal.</p>
-        </div>
-        <figure class="flow-media">
-          <img src="assets/newdesign/during-session.png" alt="Anchor active session screen with timer, score, and proctor state.">
-        </figure>
-      </article>
-
-      <article class="flow-step notification-step">
-        <div class="flow-copy">
-          <span>03</span>
-          <h2>Caught the moment you drift.</h2>
-          <p>Wander into a rabbit hole and Anchor reacts in seconds — a notification and a spoken reminder.</p>
-        </div>
-        <figure class="flow-media notification-media">
-          <img src="assets/newdesign/notification.png" alt="Anchor notification asking the user to switch back to homework documents.">
-        </figure>
-      </article>
-
-      <article class="flow-step reverse">
-        <div class="flow-copy">
-          <span>04</span>
-          <h2>Scored, not just blocked.</h2>
-          <p>Each block ends with a focus score and the possibility to unlock or lose a pet!</p>
-        </div>
-        <figure class="flow-media">
-          <img src="assets/newdesign/result-pet.png" alt="Anchor completed session result showing score and pet reward status.">
-        </figure>
-      </article>
-
-      <article class="flow-step">
-        <div class="flow-copy">
-          <span>05</span>
-          <h2>Watch focus add up.</h2>
-          <p>Analytics keeps every score, drift line, and event together, so improvement becomes something you can actually see over time.</p>
-        </div>
-        <figure class="flow-media">
-          <img src="assets/newdesign/analytics.png" alt="Anchor session analytics screen with scores, drift line, and session events.">
-        </figure>
-      </article>
-    </section>
-
-    <section class="willpower-band" aria-labelledby="willpower-title">
-      <div class="section-head center">
-        <p class="eyebrow">The long game</p>
-        <h2 id="willpower-title">Willpower is a muscle. Anchor is the gym.</h2>
-        <p>Years of infinite feeds don't just waste your time — they wear down your attention until focus feels out of reach. But willpower isn't fixed. Like any muscle, it grows when you train it and fades when you don't.</p>
-        <p>Every focused session is a rep. By catching drift early and rewarding the blocks you finish, Anchor makes staying on task achievable today — and a little easier tomorrow. The momentum compounds: one good session makes the next more likely, until deep focus stops feeling like a fight.</p>
-        <p>That's the whole point. Anchor isn't a cage you lean on forever — it's training that hands your willpower back.</p>
-      </div>
-    </section>
-
-    <section class="companion-section" id="companion" aria-labelledby="companion-title">
-      <div>
+    <section class="section split" aria-labelledby="stakes-title">
+      <div class="split-copy">
         <p class="eyebrow">Real stakes</p>
-        <h2 id="companion-title">Your focus keeps them alive.</h2>
-        <p>Score high and you earn a collectible pet. Let a session fall apart and you can lose one — a small, real consequence that makes the next block matter. Rewards for showing up, stakes for checking out.</p>
+        <h2 id="stakes-title">Your focus keeps them alive.</h2>
+        <p>Every session ends with a focus score. Score high to earn a collectible pet — let a session fall apart and you can lose one.</p>
       </div>
-      <figure class="companion-media">
-        <img src="assets/newdesign/pet-collection.png" alt="Anchor pet collection with multiple unlocked collectible pets.">
-      </figure>
+      <img class="split-media" src="assets/web/stakes.webp" alt="Session complete: a score of 75 and a new pet, Custard, unlocked." width="1400" height="1116" loading="lazy">
     </section>
 
-    <section class="privacy-band" aria-labelledby="privacy-title">
-      <div class="section-head">
-        <p class="eyebrow">Private by design</p>
-        <h2 id="privacy-title">Your screen never leaves your Mac.</h2>
-      </div>
-      <div class="privacy-copy">
-        <p>The AI that reads your screen runs entirely on-device. Screenshots are analyzed locally and are never uploaded.</p>
-        <p>Your sessions, scores, history, and pets stay on your Mac.</p>
-        <p>To improve the app, Anchor collects a little anonymous data — app usage events and crash diagnostics. It never collects your screen content or what you work on, and it has no API-key or cloud-AI mode. <a href="privacy.html">Read the privacy policy</a>.</p>
-      </div>
+    <section class="section privacy" aria-labelledby="privacy-title">
+      <h2 id="privacy-title" class="privacy-line">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="4.5" y="10.5" width="15" height="10.5" rx="2.6" fill="currentColor"/><path d="M8 10.5V7.8a4 4 0 0 1 8 0v2.7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+        Screenshots are analyzed on your Mac and never uploaded.
+      </h2>
+      <p><a class="link" href="privacy.html">Read the privacy policy</a></p>
     </section>
 
-    <section class="closing">
-      <img src="app-icon.png" alt="" width="56" height="56">
-      <h2>Stop blocking. Start focusing.</h2>
-      <p>A native macOS app for students, builders, and anyone done losing their best hours to the feed.</p>
-      <div class="cta-row center">
-        <a class="button" href="https://github.com/HaichaoLihc/anchor-website/releases/latest">Download for Mac</a>
-      </div>
-      <div class="text-links">
-        <a href="support.html">Support</a>
-        <a href="privacy.html">Privacy</a>
+    <section class="section closing" aria-labelledby="closing-title">
+      <img src="app-icon.png" alt="" width="64" height="64">
+      <h2 id="closing-title">Start your first focused session.</h2>
+      <div class="cta">
+        <a class="button" href="https://apps.apple.com/us/app/anchor-ai-focus/id6774340728?mt=12">Get it free on the Mac App Store</a>
+        <a class="link" href="https://github.com/HaichaoLihc/anchor-website/releases/latest">or download directly</a>
       </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <p class="credits">Made by <a href="https://www.linkedin.com/in/haichaol/" target="_blank" rel="noopener">Haichao Li</a> and <a href="https://www.linkedin.com/in/jessica-le-a72a5b2a9/" target="_blank" rel="noopener">Kexin Le</a></p>
+    <nav class="footer-links" aria-label="Footer">
+      <span>© 2026 Anchor</span>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </footer>
+
+  <script>
+    (function () {
+      var video = document.getElementById('promo-video');
+      var play = document.querySelector('[data-play]');
+      var sound = document.querySelector('[data-sound]');
+      if (!video || !play || !sound) return;
+      var iconPause = play.querySelector('[data-icon-pause]');
+      var iconPlay = play.querySelector('[data-icon-play]');
+      var soundLabel = sound.querySelector('span');
+
+      function syncPlay() {
+        var paused = video.paused;
+        iconPause.hidden = paused;
+        iconPlay.hidden = !paused;
+        play.setAttribute('aria-label', paused ? 'Play video' : 'Pause video');
+      }
+
+      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        video.removeAttribute('autoplay');
+        video.pause();
+      }
+
+      play.addEventListener('click', function () {
+        if (video.paused) video.play(); else video.pause();
+      });
+      sound.addEventListener('click', function () {
+        if (video.muted) {
+          video.muted = false;
+          video.currentTime = 0;
+          video.play();
+          soundLabel.textContent = 'Mute';
+          sound.setAttribute('aria-pressed', 'true');
+        } else {
+          video.muted = true;
+          soundLabel.textContent = 'Play with sound';
+          sound.setAttribute('aria-pressed', 'false');
+        }
+      });
+      video.addEventListener('play', syncPlay);
+      video.addEventListener('pause', syncPlay);
+      syncPlay();
+    })();
+  </script>
 </body>
 </html>
